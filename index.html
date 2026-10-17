@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mr. Sarfo Animal Farm | Quality Livestock & Pets</title>
+<meta name="description" content="Premium foreign dog breeds, cattle, rabbits, pigs, and turkeys.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a href="#home" class="logo">MR. SARFO<br>ANIMAL FARM</a>
+  <nav><a href="#home">Home</a><a href="#animals">Animals</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#map">Find Us</a></nav>
+</div></header>
+
+<main>
+<div class="hero" id="home">
+  <h1>Quality Livestock &amp; Pets</h1>
+  <p>Premium foreign dog breeds, cattle, rabbits, pigs, and turkeys.</p>
+  <a class="btn" href="#animals">View available animals</a>
+</div>
+
+<section id="animals"><div class="wrap">
+  <h2>Our Available Animals</h2>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="grid"><p>Loading animals…</p></div>
+</div></section>
+
+<section class="alt" id="about"><div class="wrap about">
+  <div><h2 style="text-align:left">About the farm</h2>
+    <p style="margin-top:12px">Mr. Sarfo Animal Farm raises healthy, well-fed livestock and pedigree pets. Every animal is vaccinated, checked by a vet, and ready for its new home.</p></div>
+  <div class="stats"><div><b>5</b>Animal categories</div><div><b>100%</b>Vet checked</div><div><b>Delivery</b>Available on request</div><div><b>Support</b>Call or WhatsApp</div></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="contact">
+    <div><h2>Get in Touch</h2>
+      <form id="form">
+        <input name="name" placeholder="Name" required autocomplete="name">
+        <input name="phone" placeholder="Phone" required type="tel" autocomplete="tel">
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <button class="btn" type="submit">Send Inquiry</button><div id="msg" role="status"></div>
+      </form></div>
+    <div class="ctas">
+      <a class="btn blue" id="call">Call Us<br>024 093 0115</a>
+      <a class="btn" id="wa" target="_blank" rel="noopener">WhatsApp<br>024 093 0115</a>
+    </div>
+  </div>
+  <div id="map" aria-label="Farm location map"></div>
+</div></section>
+</main>
+<footer>© <span id="yr"></span> Mr. Sarfo Animal Farm. All rights reserved.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="app.js"></script>
+</body></html>
